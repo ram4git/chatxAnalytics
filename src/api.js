@@ -1,9 +1,5 @@
-import {
-  teams,
-  players,
-  generateArticle,
-  generateTeamsArticles
-} from './dummy-data'
+import { generateArticle, generateTeamsArticles, players, teams } from './dummy-data';
+
 
 let cachedPlayers = null
 let cachedTeams = {}

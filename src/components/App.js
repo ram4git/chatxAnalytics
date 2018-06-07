@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Navbar from './Navbar'
-import Loading from './Loading'
-import DynamicImport from './DynamicImport'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
+import DynamicImport from './DynamicImport';
+import Loading from './Loading';
+import Navbar from './Navbar';
 
 const Home = (props) => (
   <DynamicImport load={() => import('./Home')}>
@@ -47,16 +48,16 @@ const Articles = (props) => (
 class App extends Component {
   render() {
     return (
-      <Router basename={'/projects/router-league'}>
+      <Router basename={'/chat'}>
         <div>
           <Navbar />
 
           <Switch>
             <Route path='/' exact component={Home} />
-            <Route path='/players' component={Players} />
-            <Route path='/teams' component={Teams} />
+            <Route path='/feedback' component={Players} />
+            <Route path='/stats' component={Teams} />
+            <Route path='/charts' component={Articles} />
             <Route path='/:teamId' exact component={TeamPage} />
-            <Route path='/:teamId/articles' component={Articles} />
             <Route render={() => <h1 className='text-center'>Four oh Four.</h1>} />
           </Switch>
         </div>

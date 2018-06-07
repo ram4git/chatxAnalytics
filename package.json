@@ -2,15 +2,21 @@
   "name": "reactrouter-course-project",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://tylermcginnis.com/projects/router-league/",
+  "homepage": "https://tylermcginnis.com/projects/router-league/",
   "dependencies": {
+    "chart.js": "^2.7.2",
+    "firebase": "^5.0.4",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.0",
     "query-string": "^5.0.1",
     "react": "^16.2.0",
+    "react-chartjs-2": "^2.7.2",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-transition-group": "^2.2.1",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.81.1",
     "slug": "^0.9.1"
   },
   "scripts": {
